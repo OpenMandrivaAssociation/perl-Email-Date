@@ -19,7 +19,6 @@ BuildRequires:  perl(Time::Piece)
 BuildRequires:  perl(Email::Abstract)
 BuildRequires:  perl(Date::Parse)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 RFC 2822 defines the Date: header. It declares the header a required part of an
