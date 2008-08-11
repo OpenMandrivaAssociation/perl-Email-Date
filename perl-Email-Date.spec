@@ -1,8 +1,8 @@
 %define module      Email-Date
 %define name        perl-%{module}
-%define version     1.10.2
-%define up_version  1.102
-%define release     %mkrel 3
+%define version     1.10.3
+%define up_version  1.103
+%define release     %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
@@ -11,10 +11,7 @@ Summary:        Find and Format Date Headers
 License:        GPL or Artistic
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{up_version}.tar.bz2
-%if %{mdkversion} < 1010
-BuildRequires:  perl-devel
-%endif
+Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{up_version}.tar.gz
 BuildRequires:  perl(Time::Piece)
 BuildRequires:  perl(Email::Abstract)
 BuildRequires:  perl(Date::Parse)
