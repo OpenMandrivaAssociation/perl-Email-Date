@@ -14,6 +14,7 @@ URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{up_version}.tar.gz
 BuildRequires:  perl(Time::Piece)
 BuildRequires:  perl(Email::Abstract)
+BuildRequires:  perl(Email::Date::Format)
 BuildRequires:  perl(Date::Parse)
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
