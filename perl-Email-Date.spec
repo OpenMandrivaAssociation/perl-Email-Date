@@ -1,23 +1,22 @@
-%define module      Email-Date
-%define name        perl-%{module}
-%define version     1.10.3
-%define up_version  1.103
-%define release     %mkrel 1
+%define upstream_name    Email-Date
+%define upstream_version 1.103
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
-Summary:        Find and Format Date Headers
-License:        GPL or Artistic
-Group:          Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{up_version}.tar.gz
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Find and Format Date Headers
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:  perl(Time::Piece)
 BuildRequires:  perl(Email::Abstract)
 BuildRequires:  perl(Email::Date::Format)
 BuildRequires:  perl(Date::Parse)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 RFC 2822 defines the Date: header. It declares the header a required part of an
@@ -31,7 +30,7 @@ encapsulated in this software. Further, the process of creating RFC compliant
 date strings is also found in this software.
 
 %prep
-%setup -q -n %{module}-%{up_version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -52,5 +51,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{perl_vendorlib}/Email
 %{_mandir}/*/*
-
-
