@@ -1,10 +1,10 @@
 %define modname	Email-Date
-%define modver	1.103
+%define modver 1.104
 
 Summary:	Find and Format Date Headers
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -44,4 +44,5 @@ make test
 %doc README Changes
 %{perl_vendorlib}/Email
 %{_mandir}/man3/*
+
 
