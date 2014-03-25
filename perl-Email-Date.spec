@@ -11,6 +11,7 @@ Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Email/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Time::Piece)
+BuildRequires: perl(Capture::Tiny)
 BuildRequires:	perl(Email::Abstract)
 BuildRequires:	perl(Email::Date::Format)
 BuildRequires:	perl(Date::Parse)
