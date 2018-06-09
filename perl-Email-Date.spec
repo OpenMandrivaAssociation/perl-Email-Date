@@ -15,6 +15,7 @@ BuildRequires:	perl(Capture::Tiny)
 BuildRequires:	perl(Email::Abstract)
 BuildRequires:	perl(Email::Date::Format)
 BuildRequires:	perl(Date::Parse)
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 
 %description
