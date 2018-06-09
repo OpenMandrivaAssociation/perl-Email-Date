@@ -4,14 +4,14 @@
 Summary:	Find and Format Date Headers
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	6
+Release:	7
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Email/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Time::Piece)
-BuildRequires: perl(Capture::Tiny)
+BuildRequires:	perl(Capture::Tiny)
 BuildRequires:	perl(Email::Abstract)
 BuildRequires:	perl(Email::Date::Format)
 BuildRequires:	perl(Date::Parse)
