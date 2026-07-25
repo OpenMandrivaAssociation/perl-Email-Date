@@ -3,12 +3,12 @@
 
 Summary:	Find and Format Date Headers
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	9
+Version:	%{modver}
+Release:	10
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Email/%{modname}-%{modver}.tar.gz
+Url:		https://github.com/rjbs/Email-Date
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-Date-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Time::Piece)
